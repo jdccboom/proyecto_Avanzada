@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input id="search" type="search" placeholder="Search" aria-label="Search">
+        <select name="filter" id="filter">
+            <option value="" selected>filter</option>
+            <option value="">Name</option>
+            <option value="">Location</option>
+            <option value="">Type</option>
+        </select>
+      </form>
+      <div class="d-flex" id="user">
+        <input id="username" type="text" placeholder="Name User" aria-label="Search" disabled>
+        <div>
+          <img [src]="image" alt="" id="userPerfil">
+          <select name="setting" id="setting" #setting>
+            <option value="" disabled>hola</option>
+            <option value="">hola</option>
+            <option value="">hola</option>
+          </select>
+        </div>
+      </div>
+      
+    </div>
+    
+</nav>

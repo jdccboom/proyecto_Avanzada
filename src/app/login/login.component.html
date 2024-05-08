@@ -1,0 +1,21 @@
+<div id= "root">
+    <div class= "form-control" id="container">
+        <h1>Login</h1>
+        <p>Enter your username below to start account </p>
+        <label for=""> Username</label>
+        <div class="input-group flex-nowrap">
+            <input type="email" class="form-control" placeholder="E-Mail" aria-label="Username" aria-describedby="addon-wrapping" name="email" [(ngModel)]="loginDTO.email" >
+        </div>
+        <label for="">Password</label>
+        <div class="input-group flex-nowrap">
+            <input type="password" class="form-control" placeholder="ej:123456789" aria-label="Username" #password aria-describedby="addon-wrapping" name="password" [(ngModel)]="loginDTO.password">
+        </div>
+        <div id="container-buttons">
+            <button class="btn btn-dark" (click)="login()">Login</button>
+            <button class="btn btn-dark" (click)="singup()" >Sign Up</button>
+        </div>
+        <div id="forgot">
+            <button class="btn btn-link" >i forgot my password</button>
+        </div>
+    </div>
+</div>

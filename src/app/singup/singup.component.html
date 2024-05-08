@@ -1,0 +1,39 @@
+<div id="root">
+    <div class= "form-control" id="container">
+        <h1>Sign Up</h1>
+        <p>Enter the following fields to register</p>
+        <div class="text-center" id="image">
+            <img [src]="imagen" onclick="document.getElementById('real-file').click()">
+            <input  (change)= "imagePerfil($event)" type="file" id="real-file" style="display: none;">
+        </div>
+        <div>
+            <label for="">Name</label>
+            <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div>
+            <label for="">NickName</label>
+            <input type="text" class="form-control" placeholder="NickName" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" class="form-control" placeholder="ej:123456789" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div>
+            <label for="">City of residence</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+        </div>
+        <div id="container-buttons">
+            <button class="btn btn-dark">SignUp</button>
+            <button class="btn btn-dark" (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>
